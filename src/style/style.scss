@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 微软雅黑;
+}
+body,html{
+  height: 100%;
+}
+div,header{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#app{
+  height: 100%;
+}
+.contentBox{
+  padding-top: 80px;
+  height: 100%;
+}
+.content{
+  min-height: 100%;
+  width: 100%;
+  padding:20px 20px 20px 220px;
+  //background: #ecf2f3;
+}
+.dzTable{
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+  margin-top:10px;
+  border: 0;
+  color: #313e40;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  thead{
+    background: #cadadc;
+    line-height: 40px;
+  }
+  th,td{
+    border-spacing: 0;
+    border-collapse: inherit;
+    line-height: 40px;
+    padding: 0 10px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+  }
+}
+.optionBtn{
+  font-size: 14px;
+  color: #38b0c5;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.selections{
+  display: inline-block;
+  min-height: 36px;
+  line-height: 36px;
+}
+.addBtn{
+  height: 36px;
+  width: 90px;
+  line-height: 36px;
+  color: #38b0c5;
+  border: 1px dashed #38b0c5;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.searchBtn{
+  height: 36px;
+  width: 90px;
+  line-height: 36px;
+  color: #fff;
+  background: #38b0c5;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.yesState{
+  line-height: 30px;
+  padding: 2px 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #38b0c5;
+  color: #fff;
+}
+.noState{
+  padding: 2px 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #fff;
+  background: #bfbfbf;
+}
+.dzFormBox {
+  height: 36px;
+  line-height: 36px;
+  color: #7f7f7f;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  float: left;
+  label{
+    font-size: 14px;
+    color: #1b1b1b;
+    float: left;
+    margin-right: 15px;
+  }
+}
+.dzSelect,.dzInput{
+  height: 36px;
+  width: 150px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #38b0c5;
+  outline: none;
+  float: right;
+  text-indent: 10px;
+}
+.modal{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  z-index: 1000;
+  font-size: 14px;
+  .modalContent{
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .deleteBox{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    background: #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .addUserBox{
+    height: 460px;
+    width: 600px;
+    position: absolute;
+    background: #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .dzInput,.dzSelect{
+      width: 180px;
+    }
+  }
+  .roleBox{
+    height: 220px;
+    width: 300px;
+    position: absolute;
+    background: #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .firstLabel{
+      display: block;
+      margin-bottom: 10px;
+      position: relative;
+      cursor: pointer;
+      input{
+        opacity: 0;
+      }
+      span{
+        display: block;
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        border: 1px solid #666;
+      }
+      .userCheck{
+        position: absolute;
+        top: 6px;
+        left: 0;
+      }
+      .roleCheck{
+        position: absolute;
+        top: 6px;
+        right: -20px;
+      }
+      .active{
+        background: #38b0c5;
+        border-color: #38b0c5;
+      }
+    }
+    .speLabel{
+      float: left;
+      display: block;
+      margin-bottom: 10px;
+      position: relative;
+      cursor: pointer;
+      input{
+        opacity: 0;
+      }
+      span{
+        display: block;
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        position: absolute;
+        top: 5px;
+        right: -15px;
+        border: 1px solid #666;
+      }
+      .active{
+        background: #38b0c5;
+        border-color: #38b0c5;
+      }
+    }
+    .resourceItem{
+      float: left;
+    }
+    .firstItem{
+      height: 30px;
+    }
+    .secBox{
+      padding-left: 30px;
+      min-height: 26px;
+    }
+  }
+  .modalTitle {
+    height: 40px;
+    line-height: 40px;
+    background: #38b0c5;
+    color: #fff;
+    padding: 0 10px;
+    span{
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .modalBody{
+    padding:15px 15px;
+    width: 100%;
+    color: #666;
+  }
+  .modalBtns{
+    height: 36px;
+    float: right;
+    padding:0 15px;
+    span{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #fff;
+      padding:5px 10px;
+      float: right;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .sure{
+      background: #38b0c5;
+      color: #fff;
+    }
+    .cancel{
+      color: #666;
+      background: #eee;
+    }
+  }
+  .resourceFir {
+    height: 36px;
+    line-height: 36px;
+  }
+  input::-webkit-inner-spin-button{
+    visibility:hidden;
+  }
+}
+
